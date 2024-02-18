@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  url_healthcheck:
+    image: healthcheck
+    environment:
+      URL_TO_CHECK: "https://skyjo-online.com"
+      FREQUENCY_CHECK_SECONDS: "10"
